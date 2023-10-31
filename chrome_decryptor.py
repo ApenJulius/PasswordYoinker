@@ -1,4 +1,4 @@
-#Full Credits to LimerBoy
+#Full Credits to LimerBoy, i just ripped this part of the code. Minor adjustments for my purpose but still, bow down
 import os
 import re
 import sys
